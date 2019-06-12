@@ -1,0 +1,76 @@
+@font-face {
+    font-family: 'MullerMedium';
+    src: url('Fontfabric - MullerMedium.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MullerExtraBold';
+    src: url('Fontfabric - MullerExtraBold.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MullerBold';
+    src: url('Fontfabric - MullerBold.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MullerRegular';
+    src: url('Fontfabric - MullerRegular.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'UniNeue';
+    src: url('UniNeueHeavy.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MullerMedium';
+    src: url('Fontfabric - MullerMedium.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'myriadpro_bold';
+    src: url('myriadpro_bold.otf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url('Open_Sans/OpenSans-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-SemiBold';
+    src: url('Open_Sans/OpenSans-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: url('Open_Sans/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: url('Open_Sans/OpenSans-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-ExtraBold';
+    src: url('Open_Sans/OpenSans-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
