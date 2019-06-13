@@ -11,11 +11,6 @@ $('.floating').click(function () {
 	$(this).toggleClass('active');
 });
 
-$('.key .wrapper .item img').each(function () {
-    let width = $(this).width();
-    $(this).width(width / 19.2 + 'vw')
-})
-
 if ( $(window).width() > 999 ) {
 	$('.advantage .slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
 		$('.advantage').css('background-image', 'url(img/bg_slider'+nextSlide+'.png)');
@@ -30,6 +25,10 @@ $(window).on("load", function() {
 		offset: 60
 	})
 	wow.init();
+	$('.key .wrapper .item img').each(function () {
+		let width = $(this).width();
+		$(this).width(width / 19.2 + 'vw')
+	})
 });
 
 if ( $(window).width() < 999 ) {
