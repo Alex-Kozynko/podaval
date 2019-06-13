@@ -330,8 +330,8 @@ main {
 		position: relative;
 		width: 100%;
 		background: url(../img/bg_slider0.png) no-repeat;
-		background-size: cover;
-		background-position: 100% center;
+		background-size: auto 120%;
+		background-position: center 100%;
 		z-index: 1;
 		transition: all 1s;
 		.vertical_text {
@@ -436,6 +436,7 @@ main {
 					box-shadow: 0 $a27 $a40 0 rgba(0, 4, 2, 0.5);
 					.fix_letter {
 						font-family: 'OpenSans-SemiBold';
+						font-size: $a22;
 					}
 					h3 {
 						margin-bottom: $a45;
@@ -2128,15 +2129,24 @@ footer {
           background: $osn-col;
         }
       }
-      .email {
-        color: #ffffff;
-        font-size: $a20;
-        padding-top: $a15;
-        transition: all 0.5s;
-        &:hover {
-          color: $osn-col;
-        }
-      }
+		.email {
+			color: #ffffff;
+			font-size: $a20;
+			padding-top: $a10;
+			transition: all 0.5s;
+			&:hover {
+				color: $osn-col;
+			}
+		}
+		.youtube {
+			color: #ffffff;
+			font-size: $a20;
+			padding-top: $a10;
+			transition: all 0.5s;
+			&:hover {
+				color: $osn-col;
+			}
+		}
     }
     .developer {
       padding-left: $a56;
@@ -3202,7 +3212,7 @@ footer {
 					height: $m20;
 					font-size: $m14;
 				}
-				.email {
+				.email, .youtube {
 					font-size: $m22;
 				}
 			}
