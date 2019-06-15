@@ -197,6 +197,9 @@ button {
 }
 
 @media screen and (max-width: 999px) {
+  main {
+    overflow: hidden;
+  }
   .container {
     width: 95% !important;
   }
@@ -231,5 +234,51 @@ button {
   li {
     font-size: $m14 !important;
     line-height: initial !important;
+  }
+  .vertical_text {
+    display: none !important;
+  }
+  .slick-prev, .slick-next {
+    width: $m30 !important;
+    height: $m30 !important;
+    top: 0 !important;
+    bottom: 0 !important;
+    right: -$m15 !important;
+    left: auto !important;
+    margin: auto !important;
+    background: none !important;
+    box-shadow: none !important;
+    &:active {
+      box-shadow: none !important;
+    }
+    &:before {
+      content: '';
+      border: 2px solid #fff !important;
+      border-left-color: transparent !important;
+      border-bottom-color: transparent !important;
+      width: $m5;
+      height: $m5;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      opacity: 1;
+      -webkit-border-radius: .15625vw;
+      border-radius: .15625vw;
+    }
+    &:nth-of-type(1) {
+      transform: rotate(-135deg);
+      margin-left: $m30;
+    }
+    &:nth-of-type(2) {
+      transform: rotate(45deg);
+      margin-right: $m30;
+    }
+  }
+  .slick-prev {
+    left: -$m15 !important;
+    right: auto !important;
   }
 }
