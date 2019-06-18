@@ -1112,6 +1112,11 @@ main {
 				width: 100%;
 				display: flex;
 				justify-content: space-between;
+				.fix_letter {
+					font-family: 'OpenSans-SemiBold';
+					font-style: normal;
+					font-size: $a18 !important;
+				}
 				.blocks {
 					.block_rotate {
 						position: relative;
@@ -2552,6 +2557,11 @@ footer {
 					width: 50%;
 				}
 			}
+			p {
+				.fix_letter {
+					font-size: $m12;
+				}
+			}
 		}
 	}
 	main .block_5 .container .bloks {
@@ -2679,7 +2689,8 @@ footer {
 				flex-direction: column;
 				align-items: center;
 				width: 95vw;
-              padding: $m10 0;
+              	padding: $m10 0;
+				margin: 0 $m50;
 				.block_rotate {
 					span {
 						font-size: $m30;
@@ -2728,10 +2739,9 @@ footer {
         span {
           font-size: $m20;
 			display: flex;
-			align-items: center;
+			align-items: flex-end;
 			justify-content: center;
 			i {
-				margin-top: -$m5;
 				font-size: $m20;
 			}
         }
@@ -3151,6 +3161,7 @@ footer {
 		}
 	}
 	main .answer {
+		padding-top: $m15;
 		.container {
 			.right {
 				width: 100%;
@@ -3211,8 +3222,10 @@ footer {
 				width: 90%;
 				white-space: pre-line !important;
 				i {
-					margin-right: $m5;
 					padding-bottom: $m10;
+				}
+				.fa {
+					margin-right: $m5;
 				}
 			}
 			.social {
