@@ -2652,7 +2652,7 @@ footer {
 				right: 0 !important;
 				left: auto !important;
 				border-radius: $m5;
-				box-shadow: 1px 1px 10px 1px #000 !important;
+				box-shadow: none !important;
 				background: #ffffff !important;
 				&:before {
 					content: '';
@@ -2668,7 +2668,6 @@ footer {
 					left: 0;
 					margin: auto;
 					opacity: 1;
-					-webkit-border-radius: .15625vw;
 					border-radius: .15625vw;
 				}
 				&:nth-of-type(1) {
@@ -2743,6 +2742,7 @@ footer {
 			justify-content: center;
 			i {
 				font-size: $m20;
+				margin-right: $m5;
 			}
         }
       }
@@ -3114,8 +3114,7 @@ footer {
 		}
 		.container {
 			display: block;
-			padding-top: $m40;
-			margin-top: $m20;
+			margin-top: $m10;
 			.slick-list {
 				overflow: visible;
 			}
