@@ -2954,6 +2954,11 @@ footer {
 					.description1 {
 						display: flex;
 						align-items: center;
+						p {
+							.fix_letter {
+								font-size: $m12;
+							}
+						}
 						.numbers {
 							margin-top: 0;
 							min-width: $m30;
