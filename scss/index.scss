@@ -2743,9 +2743,11 @@ footer {
 			display: flex;
 			align-items: flex-end;
 			justify-content: center;
+			line-height: 80% !important;
 			i {
 				font-size: $m20;
 				margin-right: $m5;
+				line-height: 100% !important;
 			}
         }
       }
