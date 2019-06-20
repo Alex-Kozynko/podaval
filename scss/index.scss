@@ -2980,6 +2980,11 @@ footer {
 								font-size: $m14;
 							}
 						}
+						p {
+							.fix_letter {
+								font-size: $m12;
+							}
+						}
 					}
 				}
 				.block2 {
