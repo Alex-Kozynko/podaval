@@ -2646,6 +2646,9 @@ footer {
 		.container .wrapper {
 			flex-direction: column;
 			align-items: center;
+			.fix_letter {
+				font-size: $m12 !important;
+			}
 			.slick-prev, .slick-next {
 				width: $m30 !important;
 				height: $m30 !important;
@@ -3205,6 +3208,9 @@ footer {
     .under {
       text-align: center;
     }
+	  .price {
+		  font-size: $m30 !important;
+	  }
   }
 	footer {
 		padding-top: $m10;
