@@ -11,14 +11,14 @@ $('.floating').click(function () {
 	$(this).toggleClass('active');
 });
 
-if ( $(window).width() > 999 ) {
+
 	$('.advantage .slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
 		$('.advantage').css('background-image', 'url(img/bg_slider'+nextSlide+'.png)');
 	});
 	$('.reviews .slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
 		$('.reviews').css('background-image', 'url(img/slider2_bg'+nextSlide+'.png)');
 	});
-}
+
 
 $(window).on("load", function() {
 	var wow = new WOW({

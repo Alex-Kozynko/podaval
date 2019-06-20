@@ -2444,11 +2444,9 @@ footer {
 		.section1 {
 			padding: $m10;
 			flex-direction: column;
+			align-items: center;
 			width: 97vw;
 			box-shadow: 0 $m5 $m7 0 rgba(0,4,2,0.65) !important;
-			max-height: 85vh;
-			overflow-y: auto;
-			overflow-x: hidden;
 			margin-right: $m50;
 			box-sizing: border-box;
 			background: #ffffff;
@@ -2456,7 +2454,7 @@ footer {
 				display: none;
 			}
 			.img {
-				width: 100%;
+				width: 70%;
               display: flex;
               flex-direction: column;
               margin: 0;
@@ -2752,31 +2750,50 @@ footer {
         }
       }
 		.wrapper {
-			flex-direction: column;
+			overflow: auto;
+			display: flex;
+			flex-wrap: nowrap;
+			align-items: center;
+			padding: $m20;margin-bottom: $m30;
 			img {
-				display: none;
+    width: 100% !important;
 			}
+			.last {
+				    min-width: 1px;
+    min-height: 1px;
+}
           .item {
-            width: 100%;
+            min-width: 100%;
+            height: $m260;
+            overflow: hidden;
+            margin-right: $m20;
+            background: #000;
+            display: flex;
+            justify-content: center;
             &:nth-last-of-type(3), &:nth-last-of-type(2) {
               transform: translateY(0%);
+             
+            }
+             &:nth-last-of-type(2) {
+             	margin-right: $m20;
+            	img {
+            		width: auto !important;
+            		height: 100%;
+            	}
+              justify-content: flex-start;
             }
           }
 			.description {
-				position: static;
-				display: flex;
-				align-items: center;
-				margin-bottom: $m10;
-              	background: none;
+				width: 100%;
 				p {
-					color: #000000;
-                  /*text-align: center;*/
+					
 				}
 				.number {
 					min-width: $m30;
 					height: $m30;
 					margin-right: $m10;
-					margin-top: 0;
+					margin-top: -$m15;
+					margin-bottom: $m10;
 					span {
 						font-size: $m14;
 					}
