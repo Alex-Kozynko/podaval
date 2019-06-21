@@ -2411,8 +2411,8 @@ footer {
 		margin-bottom: 0;
 	}
 	main .block_4 .container .page_wrapper {
-		padding-top: $m50;
-		margin-top: $m10;
+		padding-top: $m45;
+		margin-top: -$m5;
 		width: 100%;
 		.slick-list {
 			overflow: visible;
@@ -2466,11 +2466,14 @@ footer {
 			margin-right: $m50;
 			box-sizing: border-box;
 			background: #ffffff;
+			h3 {
+				font-size: $m16 !important;
+			}
 			.bg {
 				display: none;
 			}
 			.img {
-				width: 70%;
+				width: 80%;
               display: flex;
               flex-direction: column;
               margin: 0;
@@ -2521,6 +2524,9 @@ footer {
 			background-position: 100% 0 !important;
 			.vertical_text {
 				display: none;
+			}
+			.container {
+				padding: $m45 0;
 			}
 		}
 	}
@@ -2606,6 +2612,8 @@ footer {
 		height: auto;
 		padding-bottom: $a50;
       	background-position: 80% 0;
+      	position: relative;
+      
 		.bg_container {
 			display: none;
 		}
@@ -3245,6 +3253,9 @@ footer {
 	}
   main .block_4_1 .container .page_wrapper .section1 {
     width: 95vw;
+    h3 {
+    	font-size: $m16 !important;
+    }
     .under {
       text-align: center;
     }
