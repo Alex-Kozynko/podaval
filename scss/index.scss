@@ -2176,7 +2176,6 @@ footer {
 
 @media screen and (max-width: 999px) {
 	header {
-		height: auto;
 		padding-bottom: $m10;
 		.container {
 			.wrapper {
@@ -2277,7 +2276,7 @@ footer {
 				.gallery {
 					width: 95%;
                   margin-left: $m10;
-                  &:before {
+                  &:before, &:after {
                     display: none;
                   }
 					img {
@@ -2290,8 +2289,10 @@ footer {
                       margin: auto;
                       display: flex;
                       flex-direction: column;
-                      justify-content: center;
+                     justify-content: space-between;
                       align-items: center;
+                      height: 80%;
+                      padding-bottom: $m20;
 						.but {
 							width: 80%;
 							height: $m40;
