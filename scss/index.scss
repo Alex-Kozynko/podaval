@@ -2526,7 +2526,7 @@ footer {
 				display: none;
 			}
 			.container {
-				padding: $m20 0;
+				padding: $m20 0 0 0;
 				h2 {
 					font-size: $m18 !important;
 				}
@@ -2534,7 +2534,7 @@ footer {
 		}
 	}
 	main .advantage .container .slider {
-		margin-top: $m60;
+		margin-top: $m80;
 		.slick-prev, .slick-next {
 			width: $m30 !important;
 			height: $m30 !important;
@@ -2573,6 +2573,7 @@ footer {
 			height: auto;
 			padding: $m10;
 			padding-top: $m30;
+			background: rgba(255,255,255,0.5);
 			.drops {
 				width: $m40;
 				height: $m40;
