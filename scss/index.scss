@@ -2177,6 +2177,21 @@ footer {
 @media screen and (max-width: 999px) {
 	header {
 		padding-bottom: $m10;
+		position: relative;
+		&:after {
+			width: $m20;
+			height: $m20;
+			border: $m2 solid #fff;
+			border-top-color: transparent;
+			border-left-color: transparent;
+			transform: rotate(45deg);
+			content: '';
+			position: absolute;
+			bottom: $m15;
+			left: 0;
+			right: 0;
+			margin: auto;
+		}
 		.container {
 			.wrapper {
 				&:nth-child(1) {
