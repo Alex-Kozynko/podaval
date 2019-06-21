@@ -2526,12 +2526,15 @@ footer {
 				display: none;
 			}
 			.container {
-				padding: $m44 0;
+				padding: $m20 0;
+				h2 {
+					font-size: $m18 !important;
+				}
 			}
 		}
 	}
 	main .advantage .container .slider {
-		margin-top: $m20;
+		margin-top: $m60;
 		.slick-prev, .slick-next {
 			width: $m30 !important;
 			height: $m30 !important;
