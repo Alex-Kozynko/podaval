@@ -14,6 +14,11 @@ $('.floating').click(function () {
 
 	$('.advantage .slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
 		$('.advantage').css('background-image', 'url(img/bg_slider'+nextSlide+'.png)');
+		if (nextSlide === 2) {
+			$('.advantage').css("background-position", "40% 0%");
+		} else {
+			$('.advantage').css("background-position", "100% 0%");
+		}
 	});
 	$('.reviews .slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
 		$('.reviews').css('background-image', 'url(img/slider2_bg'+nextSlide+'.png)');
