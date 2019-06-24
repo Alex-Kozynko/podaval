@@ -26,7 +26,7 @@ $('.floating').click(function () {
 	let scroll = $("main .key .wrapper .item").width() + $("main .key .wrapper .item").width()/14;
 	$("main .key .wrapper").click(function () {
 		$("main .key .wrapper").animate({scrollLeft: scroll}, 500);
-	})
+	});
 
 
 $(window).on("load", function() {
