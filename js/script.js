@@ -22,6 +22,11 @@ $('.floating').click(function () {
 	});
 	$('.reviews .slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
 		$('.reviews').css('background-image', 'url(img/slider2_bg'+nextSlide+'.png)');
+        if (nextSlide === 3) {
+            $('.reviews').css("background-position", "55% 0%");
+        } else {
+            $('.reviews').css("background-position", "0% 0%");
+        }
 	});
 	let scroll = $("main .key .wrapper .item").width() + $("main .key .wrapper .item").width()/14;
 	$("main .key .wrapper").click(function () {
@@ -32,7 +37,7 @@ $('.floating').click(function () {
 $(window).on("load", function() {
 	var wow = new WOW({
 		offset: 60
-	})
+	});
 	wow.init();
 	$('.key .wrapper .item img').each(function () {
 		let width = $(this).width();

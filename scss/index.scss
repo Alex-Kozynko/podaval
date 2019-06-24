@@ -1528,7 +1528,7 @@ main {
 		background-size: cover;
 		z-index: 1;
 		padding: $a180 0;
-		transition: all 0.5s;
+		transition: all 0.5s, background-position 0s;
 		.vertical_text {
 			text-transform: uppercase;
 			left: -$a50;
