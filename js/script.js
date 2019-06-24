@@ -23,6 +23,11 @@ $('.floating').click(function () {
 	$('.reviews .slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
 		$('.reviews').css('background-image', 'url(img/slider2_bg'+nextSlide+'.png)');
 	});
+	let scroll = $("main .key .wrapper .item").width() + $("main .key .wrapper .item").width()/14;
+	$("main .key .wrapper").click(function () {
+
+		$("main .key .wrapper").animate({scrollLeft: scroll}, 500);
+	})
 
 
 $(window).on("load", function() {
